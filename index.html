@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <!-- header -->
-        <header>
-            <div class="header">
-                <div class="upgrade">
-                    <button>
-                        EFFETTUA L'UPGRADE
-                    </button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <!-- left navbar -->
+            <div class="left-nav">
+                <div class="left-nav-top">
+                    <div class="nav-logo nav-center">
+                        <img src="img/logo.svg" alt="logo spotify">
+                    </div>
+                    <div class="nav-link nav-center">
+                        <div class="link">
+                            <div class="link-img">
+                                <img src="img/home.svg" alt="immagine home">
+                            </div>
+                            <span>Home</span>
+                        </div>
+                        <div class="link">
+                            <div class="link-img">
+                                <img src="img/search.svg" alt="immagine ricerca">
+                            </div>
+                            <span>Cerca</span>
+                        </div>
+                        <div class="link">
+                            <div class="link-img">
+                                <img src="img/libreria.svg" alt="immagine libreria">
+                            </div>
+                            <span>La tua libreria</span>
+                        </div>
+                    </div>
+                    <div class="nav-playlist nav-center">
+                        <h4>PLAYLIST</h4>
+                        <div class="new-playlist">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Crea Playlist</span>
+                        </div>
+                        <div class="playlist">Nome Playlist</div>
+                        <div class="playlist">Nome Playlist</div>
+                        <div class="playlist">Nome Playlist</div>
+                        <div class="playlist">Nome Playlist</div>
+                        <div class="playlist">Nome Playlist</div>
+                        <div class="playlist">Nome Playlist</div>
+                    </div>
                 </div>
+                <div class="left-nav-bottom">
+                    <div class="end-left nav-center">
+                        <div class="download">
+                            <div class="img-download">
+                                <img src="img/download.svg" alt="">
+                            </div>
+                            <span>Installa app</span>
+                        </div>
+                        <hr>
+                        <div class="user">
+                            <div class="img-user">
+                                <img src="img/profile.svg" alt="">
+                            </div>
+                            <span>John Doe</span>
+                        </div>
+                    </div>
+                </div>
+    
             </div>
-        </header>
-        <!-- /header -->
-        <nav>
-            
-        <!-- left navbar -->
-        <div class="left-nav">
-            <div class="left-nav-top">
-                <div class="nav-logo nav-center">
-                    <img src="img/logo.svg" alt="logo spotify">
-                </div>
-                <div class="nav-link nav-center">
-                    <div class="link">
-                        <div class="link-img">
-                            <img src="img/home.svg" alt="immagine home">
-                        </div>
-                        <span>Home</span>
-                    </div>
-                    <div class="link">
-                        <div class="link-img">
-                            <img src="img/search.svg" alt="immagine ricerca">
-                        </div>
-                        <span>Cerca</span>
-                    </div>
-                    <div class="link">
-                        <div class="link-img">
-                            <img src="img/libreria.svg" alt="immagine libreria">
-                        </div>
-                        <span>La tua libreria</span>
-                    </div>
-                </div>
-                <div class="nav-playlist nav-center">
-                    <h4>PLAYLIST</h4>
-                    <div class="new-playlist">
-                        <i class="fa-solid fa-plus"></i>
-                        <span>Crea Playlist</span>
-                    </div>
-                    <div class="playlist">Nome Playlist</div>
-                    <div class="playlist">Nome Playlist</div>
-                    <div class="playlist">Nome Playlist</div>
-                    <div class="playlist">Nome Playlist</div>
-                    <div class="playlist">Nome Playlist</div>
-                    <div class="playlist">Nome Playlist</div>
-                </div>
-            </div>
-            <div class="left-nav-bottom">
-                <div class="end-left nav-center">
-                    <div class="download">
-                        <div class="img-download">
-                            <img src="img/download.svg" alt="">
-                        </div>
-                        <span>Installa app</span>
-                    </div>
-                    <hr>
-                    <div class="user">
-                        <div class="img-user">
-                            <img src="img/profile.svg" alt="">
-                        </div>
-                        <span>John Doe</span>
-                    </div>
-                </div>
-            </div>
+            <!-- /left navbar -->
 
+            <!-- main section -->
+            <div class="main-section">
+                <div class="upgrade-bar">
+                    <div class="upgrade">
+                        <button>Effettua l'upgrade</button>
+                    </div>
+                </div>
+                <div class="main-section-header">
+                    <h5>IN EVIDENZA</h5>
+                    <h5>PODCAST</h5>
+                    <h5>CLASSIFICHE</h5>
+                    <h5>GENERI E MOOD</h5>
+                    <h5>NUOVE USCITE</h5>
+                    <h5>SCOPRI</h5>
+                </div>
+            </div>
         </div>
-
-        <!-- /left navbar -->
-
+        <!-- /main section -->
+        
         <!-- bottom navbar -->
-
 
         <div class="bottom-nav">
             <div class="track nav-center">
@@ -143,7 +149,6 @@
         </div>
 
         <!-- bottom navbar -->
-    </nav>
-
+    </main>
 </body>
 </html>
