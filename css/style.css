@@ -4,6 +4,214 @@
     box-sizing: border-box;
 }
 
+.nav-center {
+    padding-left: 20px;
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+nav .left-nav {
+    background-color:#000000 ;
+    max-width: 200px;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+nav .left-nav .nav-logo {
+    max-width: 70%;
+    padding-top: 20px;
+}
+
+
+nav .left-nav .nav-link {
+    color: grey;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav .left-nav .nav-link .link {
+    display: flex;
+    align-items: center;
+}
+
+nav .left-nav .nav-link .link:first-child {
+    border-left: 3px solid #adff2f;
+}
+
+nav .left-nav .nav-link .link .link-img {
+    width: 25px;
+}
+
+nav .left-nav .nav-playlist {
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav .left-nav .nav-playlist h4 {
+    color: white;
+    padding-top: 20px;
+}
+
+nav .left-nav .nav-playlist .new-playlist .fa-plus {
+    background-color: grey;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav .left-nav .end-left {
+    color: white;
+}
+
+nav .left-nav .end-left .download {
+    display: flex;
+    gap: 10px;
+    color: gray;
+}
+
+nav .left-nav .end-left .download .img-download{
+    width: 20px;
+}
+
+nav .left-nav .end-left .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.left-nav-bottom .end-left hr {
+    margin-right: 20px;
+    border: 1px solid gray;
+}
+
+nav .left-nav .end-left .user .img-user img {
+    width: 30px;
+    background-color: gray;
+    border-radius: 25px;
+}
+
+nav .bottom-nav {
+    width: 100%;
+    height: 100px;
+    background-color: #282828 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .bottom-nav .track {
+    display: flex;
+    align-items: center;
+}
+
+nav .bottom-nav .track .track-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+nav .bottom-nav .track .track-info .track-name {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .bottom-nav .track .track-info .track-name span {
+    color: gray;
+    font-size: 10px;
+}
+
+nav .bottom-nav .track .track-info .track-img {
+    max-width: 60px;
+
+}
+
+nav .bottom-nav .track .track-info .track-img img {
+    width: 100%;
+}
+
+nav .bottom-nav .track .love {
+    color: grey;
+    display: flex;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+nav .bottom-nav .player-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .bottom-nav .player-section .player-top {
+    color: white;
+    display: flex;
+    gap: 25px;
+    font-size: 25px;
+}
+
+nav .bottom-nav .player-section .player-bottom {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+nav .bottom-nav .player-section .player-bottom .track-line {
+    display: flex;
+}
+
+nav .bottom-nav .player-section .player-bottom .track-line .line-full{
+    width: 300px;
+    height: 5px;
+    background-color: gray;
+    border-radius: 25px;
+}
+
+nav .bottom-nav .player-section .player-bottom .track-line .line-empty{
+    width: 100px;
+    height: 5px;
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
+nav .bottom-nav .volume {
+    color: white;
+    display: flex;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+nav .bottom-nav .volume .volume-line {
+    display: flex;
+    align-items: center;
+}
+
+nav .bottom-nav .volume .volume-line .volume-line-full{
+    width: 50px;
+    height: 5px;
+    background-color: gray;
+    border-radius: 25px;
+}
+
+nav .bottom-nav .volume .volume-line .volume-line-empty{
+    width: 40px;
+    height: 5px;
+    background-color: lightgray;
+    border-radius: 25px;
 }
