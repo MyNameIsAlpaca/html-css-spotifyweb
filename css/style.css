@@ -215,3 +215,23 @@ nav .bottom-nav .volume .volume-line .volume-line-empty{
     background-color: lightgray;
     border-radius: 25px;
 }
+
+.header {
+    height: 100px;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    background-color: #080b1270;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .upgrade button {
+    padding: 15px 30px;
+    background-color: #080b12;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
