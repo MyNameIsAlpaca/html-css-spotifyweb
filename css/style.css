@@ -54,11 +54,29 @@ main .main-container .left-nav .nav-link .link .link-img {
     width: 25px;
 }
 
+main .main-container .left-nav .nav-link .link span:hover {
+    cursor: pointer;
+    color: white;
+}
+
+main .main-container .left-nav .nav-link .link .link-img {
+cursor: pointer;
+}
+
 main .main-container .left-nav .nav-playlist {
     color: grey;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+main .main-container .left-nav .nav-playlist div:hover {
+    color: white;
+    cursor: pointer;
+}
+
+main .main-container .left-nav .nav-playlist .new-playlist:hover .fa-plus {
+    background-color: white;
 }
 
 main .main-container .left-nav .nav-playlist h4 {
@@ -81,6 +99,10 @@ main .main-container .left-nav .end-left .download {
     display: flex;
     gap: 10px;
     color: gray;
+}
+
+main .main-container .left-nav .end-left .download span:hover {
+    cursor: pointer;
 }
 
 main .main-container .left-nav .end-left .download .img-download{
@@ -128,6 +150,7 @@ main .bottom-nav .track .track-info {
     align-items: center;
     gap: 10px;
     color: white;
+    padding-left: 10px;
 }
 
 main .bottom-nav .track .track-info .track-name {
@@ -138,6 +161,11 @@ main .bottom-nav .track .track-info .track-name {
 main .bottom-nav .track .track-info .track-name span {
     color: gray;
     font-size: 10px;
+}
+
+main .bottom-nav .track .track-info .track-name span:hover {
+    cursor: pointer;
+    color: white;
 }
 
 main .bottom-nav .track .track-info .track-img {
@@ -151,6 +179,11 @@ main .bottom-nav .track .track-info .track-img img {
 
 main .bottom-nav .track .love {
     color: grey;
+}
+
+main .bottom-nav .track .love i:hover {
+    color: white;
+    cursor: pointer;
 }
 
 main .bottom-nav .player-section {
@@ -172,8 +205,17 @@ main .bottom-nav .player-section .player-top {
     align-items: center;
 }
 
+main .bottom-nav .player-section .player-top i:hover {
+    cursor: pointer;
+}
+
 main .bottom-nav .player-section .player-top i:nth-child(3){
     font-size: 1.5em;
+}
+
+main .bottom-nav .player-section .player-top i:nth-child(3):hover {
+    font-size: 1.8em;
+    transition: 0.5s;
 }
 
 main .bottom-nav .player-section .player-bottom {
@@ -196,6 +238,7 @@ main .bottom-nav .player-section .player-bottom .track-line .line-empty {
     height: 4px;
     background-color: #6e7076;
     border-radius: 2px;
+    position: relative;
 }
 
 main .bottom-nav .player-section .player-bottom .track-line .line-empty .line-full {
@@ -203,8 +246,33 @@ main .bottom-nav .player-section .player-bottom .track-line .line-empty .line-fu
     height: 4px;
     background-color: #c1c1c1;
     border-radius: 2px;
+    position: relative;
 }
 
+main .bottom-nav .player-section .player-bottom .track-line .line-empty .line-full #point {
+    background-color: #c1c1c1;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+    display: none;
+}
+
+main .bottom-nav .player-section .player-bottom .track-line:hover {
+    cursor: pointer;
+}
+
+
+main .bottom-nav .player-section .player-bottom .track-line:hover .line-empty .line-full #point {
+    display: flex;
+}
+
+
+main .bottom-nav .player-section .player-bottom .track-line .line-empty .line-full:hover {
+    background-color: lime;
+}
 
 main .bottom-nav .volume {
     color: white;
@@ -234,6 +302,26 @@ main .bottom-nav .volume .volume-line .volume-line-empty .volume-line-full{
     height: 4px;
     background-color: #c1c1c1;
     border-radius: 2px;
+    position: relative;
+}
+
+main .bottom-nav .volume * {
+    cursor: pointer;
+}
+
+main .bottom-nav .volume .volume-line .volume-line-empty .volume-line-full .volume-point {
+    background-color: #c1c1c1;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    right: -2px;
+    top: -3px;
+    display: none;
+}
+
+main .bottom-nav .volume .volume-line:hover .volume-line-empty .volume-line-full .volume-point {
+    display: flex;
 }
 
 
@@ -269,7 +357,14 @@ main .bottom-nav .volume .volume-line .volume-line-empty .volume-line-full{
     border: 1px solid white;
     border-radius: 25px;
     color: white;
-    margin-right: 10px;
+    margin-right: 20px;
+    
+}
+
+.main-container .upgrade-bar .upgrade button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 .main-container .main-section .main-section-header {
@@ -280,6 +375,26 @@ main .bottom-nav .volume .volume-line .volume-line-empty .volume-line-full{
     margin-top: 80px;
     flex-wrap: wrap;
 }
+
+.main-container .main-section .main-section-header .evidence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container .main-section .main-section-header .evidence .evidence-bar {
+    width: 40px;
+    height: 3px;
+    background-color: lime;
+    border-radius: 25px;
+}
+
+
+.main-container .main-section .main-section-header h5:hover {
+    color: white;
+    cursor: pointer;
+}
+
 
 .main-section .main-section-album {
     padding: 30px 20px;
@@ -298,10 +413,35 @@ main .bottom-nav .volume .volume-line .volume-line-empty .volume-line-full{
     flex-direction: column;
     width: calc( 100% / 6 - 20px);
     text-align: center;
+    position: relative;
 }
+
 
 .main-section .album-container .album .album-img {
     max-width: 100%;
+    position: relative;
+}
+
+.main-section .album-container .album .album-img .fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    display: none;
+}
+
+.main-section .album-container .album:hover {
+    cursor: pointer;
+}
+
+
+.main-section .album-container .album .album-img:hover .fa-circle-play {
+    display: flex;
+}
+
+.main-section .album-container .album .album-img:hover img {
+    opacity: 0.5;
 }
 
 .main-section .album-container .album .album-img img {
@@ -335,6 +475,8 @@ main .bottom-nav .volume .volume-line .volume-line-empty .volume-line-full{
     border-radius: 50%;
 
 }
+
+
 
 @media screen and (min-width:768px) and (max-width:992px) {
     .main-section .album-container .album {
