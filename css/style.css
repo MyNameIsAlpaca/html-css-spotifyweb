@@ -28,6 +28,10 @@ main .main-container .left-nav .nav-logo {
     padding-top: 20px;
 }
 
+main .main-container .left-nav .nav-logo img:nth-child(2) {
+    display: none;
+}
+
 
 main .main-container .left-nav .nav-link {
     color: grey;
@@ -315,6 +319,95 @@ main .bottom-nav .volume .volume-line .volume-line-empty .volume-line-full{
     font-size: 15px;
 }
 
+.main-container .artist {
+    padding-top: 10px;
+}
+
+.main-container .artist .artist-title span {
+    color: gray;
+}
+
+.main-container .artist .album-container .album {
+    gap: 20px;
+}
+
+.main-container .artist .album-container .album .artist-img img{
+    border-radius: 50%;
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .main-section .album-container .album {
+        width: calc(calc( 100% / 4 - 20px));
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:576px) {
+    .main-section .album-container .album {
+        width: calc(calc( 100% / 2 - 20px));
+    }
+
+    main .bottom-nav .track {
+        width: 80%;
+    }
+
+    main .bottom-nav .track .love {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main-section .album-container .album {
+        width: calc(calc( 100% / 2 - 20px));
+    }
+
+    main .main-container .left-nav {
+        min-width: 80px;
+
+    }
+
+    main .main-container .left-nav .nav-playlist {
+        display: none;
+    }
+
+    main .main-container .left-nav .nav-link .link span {
+        display: none;
+    }
+
+    main .main-container .left-nav .nav-logo img:nth-child(1) {
+        display: none;
+    }
+
+    main .main-container .left-nav .nav-logo {
+        max-width: 50px;
+        display: flex;
+    }
+
+    main .main-container .left-nav .nav-logo img:nth-child(2) {
+        display: flex;
+    }
+
+    main .main-container .left-nav .end-left .download span {
+        display: none;
+    }
+
+    main .main-container .left-nav .end-left hr {
+        display: none;
+    }
+
+    main .main-container .left-nav .end-left span {
+        display: none;
+    }
+
+    main .main-container .left-nav .end-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+}
 
 
 
